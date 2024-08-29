@@ -76,7 +76,7 @@ const Home = () => {
       <Navbar />
       <main className="min-h-screen">
         {/* hero section */}
-        <section className="hero relative w-[80vw] mx-auto py-20">
+        <section className="hero section">
           <h1 className="text-center my-20 text-5xl font-light text-black">
             find a <span className="text-blue-700">home</span> away from home
           </h1>
@@ -223,7 +223,7 @@ const Home = () => {
           </div>
         </section>
         {/* features 1 */}
-        <section className="relative w-full mx-auto py-20 bg-gray-200">
+        <section className="section w-full bg-gray-200">
           <div className="w-2/3 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-x-10 text-center">
             {features.map((feat, index) => (
               <div key={index} className="flex flex-col items-center gap-y-2">
@@ -237,7 +237,7 @@ const Home = () => {
           </div>
         </section>
         {/* pg cards */}
-        <section className="relative w-[80vw] mx-auto py-20">
+        <section className="section">
           <div className="w-full flex justify-between items-end">
             <h2 className="text-center sm:text-left font-semibold text-4xl">
               Featured PGs in <span className="text-blue-700">Kolkata</span>
@@ -276,7 +276,7 @@ const Home = () => {
           </div>
         </section>
         {/* features 2 */}
-        <section className="relative w-full mx-auto py-10 flex justify-around items-center capitalize text-2xl text-center text-white bg-gray-800">
+        <section className="section w-full py-10 flex justify-around items-center capitalize text-2xl text-center text-white bg-gray-800">
           <div>
             <h1 className="font-semibold text-3xl">1k+</h1>
             <p>properties</p>
@@ -291,7 +291,7 @@ const Home = () => {
           </div>
         </section>
         {/* collections */}
-        <section className="relative w-[80vw] mx-auto flex flex-col items-center gap-y-10 py-20">
+        <section className="section flex flex-col items-center gap-y-10">
           <h2 className="text-center font-semibold text-4xl">
             Our <span className="text-blue-700">Handpicked Collections</span>
           </h2>
@@ -479,7 +479,7 @@ const Home = () => {
           </div>
         </section>
         {/* faq */}
-        <section className="relative w-[80vw] mx-auto py-20 text-center">
+        <section className="section text-center">
           <h1 className="text-5xl font-bold capitalize">
             how can we <span className="text-blue-700">help</span> you ?
           </h1>
