@@ -37,35 +37,35 @@ const features = [
 
 const pgdetails = [
   {
-    price: "6400",
-    address: "Sector 2, Saltlake City, Kolkata",
-    tags: ["for boys", "all preferred"],
-    pg_name: "Akash PG",
-    facility: "Food, WIFI, AC...+9",
+    price: "7500",
+    address: "Sector 5, Saltlake City, Kolkata",
+    tags: ["for boys", "AC rooms"],
+    pg_name: "Sunny Stay PG",
+    facility: "Food, WIFI, Laundry...+8",
     img: "/pg1.jpeg",
   },
   {
-    price: "6400",
-    address: "Sector 2, Saltlake City, Kolkata",
-    tags: ["for boys", "all preferred"],
-    pg_name: "Akash PG",
-    facility: "Food, WIFI, AC...+9",
+    price: "6800",
+    address: "New Town, Action Area 1, Kolkata",
+    tags: ["for girls", "all preferred"],
+    pg_name: "Pearl PG",
+    facility: "Food, Geyser, 24x7 Security...+7",
     img: "/pg2.jpg",
   },
   {
-    price: "6400",
-    address: "Sector 2, Saltlake City, Kolkata",
-    tags: ["for boys", "all preferred"],
-    pg_name: "Akash PG",
-    facility: "Food, WIFI, AC...+9",
+    price: "6200",
+    address: "Ballygunge Place, Kolkata",
+    tags: ["for boys", "non-AC rooms"],
+    pg_name: "Ballygunge PG",
+    facility: "WIFI, Study Table,...+5",
     img: "/pg3.jpg",
   },
   {
-    price: "6400",
-    address: "Sector 2, Saltlake City, Kolkata",
-    tags: ["for boys", "all preferred"],
-    pg_name: "Akash PG",
-    facility: "Food, WIFI, AC...+9",
+    price: "7000",
+    address: "Gariahat, Kolkata",
+    tags: ["for girls", "all preferred"],
+    pg_name: "Serene Living PG",
+    facility: "Food, AC, Housekeeping...+6",
     img: "/pg4.jpg",
   },
 ];
@@ -213,10 +213,10 @@ const Home = () => {
               Search
             </button>
           </div>
-          <h2 className="text-center sm:text-left font-semibold text-2xl">
+          <h2 className="text-center sm:text-left font-semibold text-2xl ml-20">
             Find PG & Hostel in <span className="text-blue-700">Kolkata</span>
           </h2>
-          <div className="mt-4 flex justify-center sm:justify-start items-center flex-wrap gap-6">
+          <div className="w-[90%] mx-auto mt-4 flex justify-center sm:justify-start items-center flex-wrap gap-6">
             {categories.map((cat, index) => (
               <Card key={index} title={cat.title} image={cat.img} />
             ))}
@@ -228,7 +228,7 @@ const Home = () => {
             {features.map((feat, index) => (
               <div key={index} className="flex flex-col items-center gap-y-2">
                 <img src={feat.illustration} alt="" className="size-36" />
-                <h1 className="text-blue-700 font-semibold text-2xl">
+                <h1 className="text-blue-700 font-semibold text-2xl text-nowrap">
                   {feat.heading}
                 </h1>
                 <p>{feat.paragraph}</p>

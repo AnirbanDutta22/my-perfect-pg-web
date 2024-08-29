@@ -1,16 +1,18 @@
 /* eslint-disable react/prop-types */
 // import React from "react";
 
+import { Link } from "react-router-dom";
+
 const PGCard = ({ price, pgName, address, facility, tags, img_link }) => {
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow">
-      <a href="#">
+      <Link href="#">
         <img
           className="rounded-t-lg w-full h-[16rem]"
           src={img_link}
           alt={`pg-${pgName}`}
         />
-      </a>
+      </Link>
       <div className="p-5">
         <h1 className="text-xl">
           ₹{price} <span className="text-sm text-gray-400">onwards</span>
